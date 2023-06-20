@@ -183,7 +183,7 @@
       ]
     },
     {
-      "description": "Swap CMD shortcuts to Ctrl shortcuts, + [c v a f s d x w z t p b i r tab]",
+      "description": "Swap CMD shortcuts to Ctrl shortcuts, + [c v a f s d x w z t p b i r n tab]",
       "manipulators": [
         {
           "type": "basic",
@@ -405,6 +405,22 @@
           "to": [
             {
               "key_code": "r",
+              "modifiers": ["left_command"]
+            }
+          ]
+        },
+        {
+          "type": "basic",
+          "from": {
+            "key_code": "n",
+            "modifiers": {
+              "mandatory": ["control"],
+              "optional": ["shift"]
+            }
+          },
+          "to": [
+            {
+              "key_code": "n",
               "modifiers": ["left_command"]
             }
           ]
@@ -646,6 +662,22 @@
           "to": [
             {
               "key_code": "r",
+              "modifiers": ["control"]
+            }
+          ]
+        },
+        {
+          "type": "basic",
+          "from": {
+            "key_code": "n",
+            "modifiers": {
+              "mandatory": ["left_command"],
+              "optional": ["shift"]
+            }
+          },
+          "to": [
+            {
+              "key_code": "n",
               "modifiers": ["control"]
             }
           ]
